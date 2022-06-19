@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <%- include('includes/plug'); %>
+</head>
+<body>
+    <%- include('includes/headerv2'); %>
+    <section>
+        <div class="head"><h1>Task Manager</h1></div>
+        <div class="entery">
+          <form action="tm" method="post">
+            <h3>Description</h3>
+            <textarea class="tt-area" type="text" name="description" rows="5" placeholder="Type Here..." required></textarea>
+            <div class="rd-area">
+            <div class="r-area">
+            <div class="radio">
+            <input type="radio" id="com" name="complete" value="complete">
+            <label for="html">Complete</label><br>
+            </div>
+            <div class="radio">
+            <input type="radio" id="com" name="complete" value="notcomplete" checked>
+            <label for="html">Not Complete</label>
+            </div></div>
+            <div class="d-area">
+              <h5>Dead Line</h5>
+              <input type="date" name="deadline" class="time" required>
+            </div>
+          </div>
+          <button class="btn-s save" type="submit">Save</button>
+          </form>
+          <!--this is read area-->
+          </div>
+          <div class="read">
+            <hr class="mid"><br>
+            <div class="head"><h1>Saved Notes &#8595;</h1></div>
+
+            <% for(let i=data.length-1; i>=0; i--){ %>
+              <% let des = data[i].description; %>
+              <% let con = data[i].condition; %>
+              <% let dl = data[i].deadline; %>
+              <% let id = data[i].id; %>
+            <form action="/update" method="post">
+              <h4>Description</h4>
+              <textarea class="tt-area" type="text" name="description" rows="5" required><%=des %></textarea>
+              <div class="rd-area">
+              <div class="r-area">
+                <% if( con === "notcomplete") {%>
+              <div class="radio">
+              <input type="radio" id="com" name="complete" value="complete">
+              <label for="html">Complete</label><br>
+              </div>
+              <div class="radio">
+              <input type="radio" id="com" name="complete" value="notcomplete" checked>
+              <label for="html">Not Complete</label>
+              </div><%}else{%>
+                <div class="radio">
+                  <input type="radio" id="com" name="complete" value="complete" checked>
+                  <label for="html">Complete</label><br>
+                  </div>
+                  <%}%>
+                  <input class="hide" name="id" type="text" value="<%=id%>">
+            </div>
+              <div class="d-area d-time">
+                <h5>Dead Line : </h5>
+                <h5 style="color:#b7405e; margin-left: 5px;"><%=dl %></h5>
+              </div>
+            </div>
+            <button id="<%=con%>" class="btn-s save" type="submit" name="update" value="upd">Update</button>
+            <button class="btn-s save delete" type="submit">Delete</button>  
+          </form> 
+          <hr>
+          <br>
+          <% } %>
+          </div>
+    </section>
+    <%- include('includes/footerv2'); %>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.head{
+    text-align: center;
+}
+.video{
+    text-align: center;
+    margin: 20px auto 20px;
+}
+.c-btn{
+    margin: 10px;
+    border:none;
+    border-radius: 15px;
+    padding: 10px 20px;
+    background-color: #48b972;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+.c-btn:hover{
+    background-color: #216635 ;
+}
+.Completed{
+    background-color: #0D2129;
+}

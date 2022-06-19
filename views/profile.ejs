@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <%- include('includes/plug'); %>
+</head>
+<body>
+    <%- include('includes/headerv2'); %>
+    <section>
+        <div class="p-details">
+            <div class="p-img"><img src="<%=imgname%>" alt="profile"></div>
+            <div class="d-area">
+                <h1><%=fname%></h1>
+                <h5><%=contact%></h5>
+                <h5><%=email%></h5>
+            </div>
+        </div>
+        <hr>
+        <div class="upd-area">
+            <h2>Profile Update</h2>
+            <form action="/pupdate" method="post">
+                <div class="input">
+                    <label for="">Fullname</label><br>
+                    <input type="text" name="fname" value="<%=fname%>" required>
+                </div>
+                <div class="input">
+                    <label for="">Contact</label><br>
+                    <input type="tel" name="contact" value="<%=contact%>" required
+                </div>
+                <div class="input">
+                    <label for="">Email</label><br>
+                    <input type="email" name="email" value="<%=email%>" required>
+                </div>
+                <button type="submit" class="btn-m update">Update</button>
+            </form>
+            <hr>
+            <div class="upd-area"></div>
+            <h2>Change Password</h2>
+            <form action="/profile" method="post">
+                <div class="input">
+                    <label for="">Current Password</label><br>
+                    <input type="password" name="cpassword" placeholder="*********" required>
+                </div>
+                <div class="input">
+                    <label for="">New Password</label><br>
+                    <input type="password" name="npassword" required>
+                </div>
+                <div class="input">
+                    <label for="">Confirm New Password</label><br>
+                    <input type="password" name="cnpassword" required>
+                </div>
+                <button type="submit" class="btn-m pass">Change</button>
+            </form>
+            <p><%=wr%></p>
+            </div>
+        </div>
+    </section>
+    <%- include('includes/footerv2'); %>
+</body>
+</html>

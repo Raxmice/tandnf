@@ -1,0 +1,45 @@
+.tt-area{
+    text-align: left;
+    border-radius: 5px;
+    border:1px solid #bcbcbc;
+    width: 97%;
+    font-size: 18px;
+    padding: 10px;
+}
+.entery{
+    margin: 20px 10px 0;
+}
+.entery h3{margin: 5px;}
+.read h4{margin: 5px; color: #484018;}
+.radio{
+    display: flex;
+    align-items: center;
+    margin: 5px 0 0 0;
+}
+#com{
+    cursor: pointer;
+    width: 20px; height: 20px;
+    margin: 0 10px 0;
+}
+.rd-area{
+    display: flex;
+}
+.r-area{flex:50%}
+.d-area{flex:50%}
+.time{
+    border: 1px solid #bcbcbc;
+    border-radius: 3px;
+    padding: 3px;
+    font-size: 16px;
+}
+.save{margin: 15px 10px;}
+.mid{border: 2px solid #125b50; background-color: #125b50;}
+.d-time{
+    display: flex;
+}
+#complete{
+    display: none;
+}
+.delete{
+    background-color: #b23030;
+}

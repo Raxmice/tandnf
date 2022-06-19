@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <%- include('includes/plug'); %>
+</head>
+<body>
+    <%- include('includes/headerv2'); %>
+    <section>
+        <div class="profile">
+            <img src="<%=imgname%>" alt="profile-pic" class="profile-pic">
+            <h2><%=fname%></h2>
+        </div>
+        <hr>
+        <div class="dl-area">
+            <div class="d-link">
+                <a href="/tm"><img src="img/task.svg" alt="notes">
+                <h4>Task Manager</h4></a>
+                <p>your all seved notes are here</p>
+            </div>
+            <div class="d-link">
+                <a href="/profile"><img src="img/profile.svg" alt="profile">
+                <h4>Profile</h4></a>
+                <p>update profile</p>
+            </div>
+            <div class="d-link">
+                <a href="/cp"><img src="img/cp.svg" alt="cp">
+                <h4>Course Page</h4></a>
+                <p>lessions about this website</p>
+            </div>
+        </div>
+        <hr>
+        <div class="text-area">
+            <div>
+                <h3>Task Manager</h3>
+                <p>You are able create/read/delete/update (CRUD).</p>
+                <p>There is following fields:</p>
+                    <li><span>Description - here you type your notes and tasks.</span> dslkf</li>
+                    <li><span>Radio button - </span> Here you select only one 'completed' or 'not conlete' to know your nots are complete or not.</li>
+                    <li><span>Deadline - </span>Show date to remind you.</li>
+            </div>
+            <br><br>
+            <div>
+                <h3>Course Page</h3>
+                <p>This is a learnig page.</p>
+                <p>There is basic lessons which consist of some instructions about this website and also have youtube video to better understand how this type of websites work.</p>
+                <p>When you comlete any lession, so there is in the you can see complete button to make lession mark as complered.</p>
+            </div>
+            <div>
+
+            </div>
+        </div>
+    </section>
+    <%- include('includes/footerv2'); %>
+</body>
+</html>

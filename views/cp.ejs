@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashbord</title>
+    <%- include('includes/plug'); %>
+</head>
+<body>
+    <%- include('includes/headerv2'); %>
+    <section>
+        <div class="head"><h1>Course Page</h1></div>
+        <div class="lession">
+            <hr>
+            <h3>Authentication system</h3>
+            <p>This is very importent for Sequrity of users. For beginers this is very complecated. becouse in Authentication everything is importent work perfectly (Frontend, backend), for this we work on html, javascript, on server (node), database, create cookies.</p>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/muhJTRQ7WMk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>Click when you complete this lession.</p>
+            <form action="/cp" method="post"><button class="c-btn <%=com1%>" name="com1" value="com1"><%=com1%></button></form></div>
+        </div>
+        <div class="lession">
+            <hr>
+            <h3>Hashing Password</h3>
+            <p>When server hacked, hacker can inport a program to see your information, but hackes need your password to mainpulate your details in database. So, we need to hash our password, after hashing hacker can see password but cant understand it.</p>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/DmrjFKTLOYo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>Click when you complete this lession.</p>
+            <form action="/cp" method="post"><button class="c-btn <%=com2%>" name="com2" value="com2"><%=com2%></button></form></div>
+        </div>
+        <div class="lession">
+            <hr>
+            <h3>Cookies</h3>
+            <p>Cookies are informaitions about you. When you login any accound in browser, browser will save some information (Email, id, etc) as a cookie. So that when you close the browser without logout, after some time you start browser again and load that account, browser will cheack cookie and login you without asking your email and password.</p>
+            <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/mevc_dl1i1I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <br>
+            <p>Click when you complete this lession.</p>
+            <form action="/cp" method="post"><button class="c-btn <%=com3%>" name="com3" value="com3"><%=com3%></button></form></div>            
+        </div>
+    </section>
+    <%- include('includes/footerv2'); %>
+</body>
+</html>

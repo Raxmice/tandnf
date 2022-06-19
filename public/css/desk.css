@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+/* font-family: 'Fira Sans', sans-serif;
+font-family: 'Bebas Neue', cursive; */
+body{
+    margin: 0;
+    font-family: 'Fira Sans', sans-serif;
+}
+a{text-decoration: none;}
+h1{color:#125b50}
+h2{margin: 0;}
+h4{margin: 5px;}
+h5{margin: 3px 0;}
+p{margin: 0;}
+.hide{display: none;}
+header{
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+}
+.subhead{
+    display:flex;
+    justify-content: space-between;
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo a{
+    color: #125b50;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+}
+.logo img{
+    margin: 0;
+    width: 30px;
+    height: 30px;
+    margin: 0 10px 0 0;
+}
+.h-btn{
+    margin: auto 0;
+}
+.btn-s{
+    font-size: 1.1rem;
+    padding:5px 10px;
+    margin: 0 5px;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    background-color: #125b50;
+}
+.btn-s:hover{opacity: 0.8;}
+
+/*main*/
+main{
+    max-width: 1080px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 10px;
+}
+.bullet-area{
+    text-align: center;
+}
+.bullet{
+    width: 40%;
+}
+.t-area{text-align: center;}
+.t-area h2{
+    color: #125b50;
+    font-size: 50px;
+}
+.btn-dash{
+    color: #ffffff;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 24px;
+    margin: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f8b400;
+}
+.btn-dash:hover{
+    background-color: #125b50;
+    cursor: pointer;
+}
+/*footer*/
+footer{
+    padding: 10px 0 20px;
+    color: #ffffff;
+    background-color: #0d2129;
+    text-align: center;
+}
+.f-links a{
+    color:#ffffff;
+    margin: 0 20px;
+}
+footer div{margin-top: 20px;}
+/*forms*/
+.ls-form{
+    margin: 20px auto;
+    width: 50%;
+}
+.ls-form div{
+    text-align: start;
+}
+.ls-form label{color:#0d2129; font-size: 20px;}
+.ls-form input{
+    padding: 0 5px;
+    width: 100%;
+    height: 30px;
+    margin: 5px 0 10px;
+    border-radius: 10px;
+    border: 2px solid #0d2129;
+}
+.btn-m{
+    color: #ffffff;
+    border: none;
+    background-color: #019267;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px auto;
+}
+.btn-m:hover{opacity: 0.8;}
+.follow img{
+    width: 400px;
+}
